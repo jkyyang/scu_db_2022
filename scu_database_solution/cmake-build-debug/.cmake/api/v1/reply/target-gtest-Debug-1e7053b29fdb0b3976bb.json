@@ -1,0 +1,148 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/libgtest.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"test/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 49,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++1y -D__VTableFILE__='\"$(subst /root/tmp/tmp.NeRsFqTPe1/,,$(abspath $<))\"' -fPIC -Wall -Wextra -Wno-error=deprecated-copy -Werror -Wno-uninitialized -march=native -Wno-unused-parameter  -g -O0 -ggdb -fno-omit-frame-pointer -fno-optimize-sibling-calls -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "gtest_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/root/tmp/tmp.NeRsFqTPe1/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/root/tmp/tmp.NeRsFqTPe1/src/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/root/tmp/tmp.NeRsFqTPe1/test/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/root/tmp/tmp.NeRsFqTPe1/third_party"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/root/tmp/tmp.NeRsFqTPe1/third_party/gmock"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "gtest::@36f028580bb02cc8272a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "gtest",
+	"nameOnDisk" : "libgtest.so",
+	"paths" : 
+	{
+		"build" : "test",
+		"source" : "test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/gmock/gmock-gtest-all.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/gmock/gmock_main.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
