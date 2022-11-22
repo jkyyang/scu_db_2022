@@ -6,6 +6,7 @@
 #include <random>
 #include "hash/extendible_hash.h"
 #include "gtest/gtest.h"
+#include "common/logger.h"
 
 
 namespace scudb {
@@ -205,7 +206,6 @@ namespace scudb {
 #define BUCKET_SIZE 64
 
 
-
     TEST(ExtendibleHashTest, LargeRandomInsertTest) {
         // set leaf size as 2
         ExtendibleHash<int, int> *test =
@@ -257,20 +257,22 @@ namespace scudb {
         delete test;
     }
 
+
     TEST(ExtendibleHashTest, BasicRandomTest) {
         ExtendibleHash<int, int> *test = new ExtendibleHash<int, int>();
-
+        LOG_INFO("创建成功");
         // insert
         int seed = time(nullptr);
         std::cerr << "seed: " << seed << std::endl;
         std::default_random_engine engine(seed);
         std::uniform_int_distribution<int> distribution(0, TEST_NUM);
         std::map<int, int> comparator;
-
+        LOG_INFO("开始插入");
         for (int i = 0; i < TEST_NUM; ++i) {
             auto item = distribution(engine);
             comparator[item] = item;
             //printf("%d,",item);
+            LOG_INFO("插入%d\n",item);
             test->Insert(item, item);
             //std::cerr << std::dec << item << std::hex << "( 0x" << item << " )" << std::endl;
         }
@@ -291,4 +293,5 @@ namespace scudb {
 
         delete test;
     }
+
 } // namespace scudb
