@@ -51,8 +51,10 @@ namespace scudb {
                 // LRU replacer也是空的
                 return nullptr;
             }
-            //如果replacer中出来了，那么直接选出
-            replacer_->Victim(target);
+            else {
+                //如果replacer中出来了，那么直接选出
+                replacer_->Victim(target);
+            }
 
         } else {
             //直接选空闲页
