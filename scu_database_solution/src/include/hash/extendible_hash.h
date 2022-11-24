@@ -35,9 +35,9 @@ namespace scudb {
 
     public:
         // constructor 构造函数
-        ExtendibleHash(size_t size);
+        ExtendibleHash(size_t size= 64);
 
-        ExtendibleHash();
+//        ExtendibleHash();
 
         // helper function to generate hash addressing
         size_t HashKey(const K &key) const;

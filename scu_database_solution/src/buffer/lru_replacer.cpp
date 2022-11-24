@@ -49,7 +49,6 @@ namespace scudb {
         secPtr->prev = curPtr;
         head->next = curPtr;
         curPtr->prev = head;
-
         map[value] = curPtr;
    }
 
