@@ -1,1 +1,1 @@
-/usr/bin/cc -g -rdynamic CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.o -o ../bin/sqlite3  -Wl,-rpath,/root/tmp/tmp.NeRsFqTPe1/cmake-build-debug/lib ../lib/libsqlite3.so -lpthread -ldl 
+/usr/bin/cc -g  -rdynamic CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.o  -o ../bin/sqlite3  -Wl,-rpath,/home/ubuntu/tmp/tmp.X2bJeHikCp/cmake-build-debug/lib ../lib/libsqlite3.so -lpthread -ldl 

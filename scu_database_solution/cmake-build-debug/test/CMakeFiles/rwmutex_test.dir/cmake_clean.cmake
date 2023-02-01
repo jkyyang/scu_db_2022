@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.o"
-  "CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.o.d"
   "rwmutex_test"
   "rwmutex_test.pdb"
 )

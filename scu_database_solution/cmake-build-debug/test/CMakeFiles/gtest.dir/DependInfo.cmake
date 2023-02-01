@@ -1,15 +1,26 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ubuntu/tmp/tmp.X2bJeHikCp/third_party/gmock/gmock-gtest-all.cc" "/home/ubuntu/tmp/tmp.X2bJeHikCp/cmake-build-debug/test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o"
+  "/home/ubuntu/tmp/tmp.X2bJeHikCp/third_party/gmock/gmock_main.cc" "/home/ubuntu/tmp/tmp.X2bJeHikCp/cmake-build-debug/test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "gtest_EXPORTS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/tmp/tmp.NeRsFqTPe1/third_party/gmock/gmock-gtest-all.cc" "test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o" "gcc" "test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o.d"
-  "/root/tmp/tmp.NeRsFqTPe1/third_party/gmock/gmock_main.cc" "test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o" "gcc" "test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../src"
+  "../src/include"
+  "../test/include"
+  "../third_party"
+  "../third_party/gmock"
   )
 
 # Targets to which this target links.

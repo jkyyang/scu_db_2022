@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o"
-  "CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o.d"
   "tuple_test"
   "tuple_test.pdb"
 )

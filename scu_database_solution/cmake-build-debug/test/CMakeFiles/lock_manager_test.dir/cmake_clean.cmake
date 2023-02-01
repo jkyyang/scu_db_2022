@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.o"
-  "CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.o.d"
   "lock_manager_test"
   "lock_manager_test.pdb"
 )
